@@ -15,7 +15,7 @@ class StatusBarAlert extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      height: new Animated.Value(props.statusbarHeight),
+      height: new Animated.Value(0),
       opacity: new Animated.Value(0),
       pulse: new Animated.Value(0)
     }
@@ -103,7 +103,7 @@ class StatusBarAlert extends Component {
             Animated.timing(
               this.state.height,
               {
-                toValue: this.props.statusbarHeight,
+                toValue: 0,
                 duration: SLIDE_DURATION
               }
             ),
