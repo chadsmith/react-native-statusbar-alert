@@ -25,5 +25,8 @@
   "peerDependencies": {
     "react": "^15",
     "react-native": ">=0.26"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
   }
 }
